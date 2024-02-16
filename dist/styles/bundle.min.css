@@ -1,0 +1,524 @@
+*,
+ul {
+  padding: 0;
+}
+
+.btn,
+body {
+  font-family: Montserrat,sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../static/fonts/Montserrat-SemiBold.woff2") format("woff2"),url("../static/fonts/Montserrat-SemiBold.woff") format("woff"),url("../static/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../static/fonts/Montserrat-Regular.woff2") format("woff2"),url("../static/fonts/Montserrat-Regular.woff") format("woff"),url("../static/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../static/fonts/OpenSans-Light.woff2") format("woff2"),url("../static/fonts/OpenSans-Light.woff") format("woff"),url("../static/fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  transition: all .3s ease-out;
+}
+
+body {
+  color: #222;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+.btn {
+  height: 53px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn.btn-black {
+  background: #000;
+  color: #fff;
+}
+
+.btn.btn-transparent {
+  background: 0 0;
+  border: 1px solid #BCBCBC;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 28px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .container .logo {
+  width: 57px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg,#b10088 0,#d16117 59%,#d77919 80%,#e2a120 100%);
+}
+
+.header .container .header-content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.header .container .header-content .header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #DCDCDC;
+  line-height: 150%;
+}
+
+.header .container .header-content .header-top .header-top-company {
+  color: #8B8B8B;
+  font-size: 12px;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item .list-item-options .list-item-option:hover,
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a.active,
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a:hover {
+  color: #EB6320;
+}
+
+.header .container .header-content .header-top .header-top-contacts {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header .container .header-content .header-top .header-top-contacts .header-top-phone {
+  padding-right: 30px;
+  border-right: 1px solid #DCDCDC;
+}
+
+.header .container .header-content .header-top .header-top-contacts .header-top-whatsapp {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.header .container .header-content .header-top .header-top-contacts .header-top-whatsapp svg {
+  margin-right: 7px;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items {
+  display: flex;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item {
+  font-size: 15px;
+  position: relative;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item:hover .list-item-options {
+  display: block;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a {
+  padding-top: 9px;
+  display: flex;
+  align-items: center;
+  line-height: 150%;
+  border-top: 1px solid transparent;
+  position: relative;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a svg {
+  margin-left: 6px;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a:after,
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  width: 0;
+  left: 0;
+  height: 1px;
+  background: #EB6320;
+  transition: all .3s ease;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a.active:after,
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a.active:before,
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a:hover:after,
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a:hover:before {
+  width: 100%;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a.active svg path,
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item a:hover svg path {
+  fill: #EB6320;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item .list-item-options {
+  display: none;
+  background: #fff;
+  width: 304px;
+  box-sizing: border-box;
+  border: 1px solid #DCDCDC;
+  font-size: 14px;
+  position: absolute;
+  top: 41.5px;
+  left: -12.5px;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item .list-item-options .list-item-option {
+  padding: 8px 12px;
+}
+
+.header .container .header-content .header-bottom-menu .menu-list .list-items .list-item .list-item-options .list-item-option:not(:last-child) {
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.header .container .burger {
+  display: none;
+}
+
+.header .container .header-action .btn {
+  background: linear-gradient(90deg,#b10088 -6.228%,#d16117 58.655%,#d77919 81.749%,#e2a120 103.743%);
+  width: 179px;
+  color: #fff;
+}
+
+.header .container .header-action .btn:hover {
+  border: 1px solid transparent;
+  background: linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#b10088,#d16117,#d77919,#e2a120) border-box;
+}
+
+.header .container .header-action .btn:hover span {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90deg,#b10088,#d16117,#d77919,#e2a120);
+}
+
+.main {
+  padding: 105px 0 25px;
+  background: url("/static/images/main-bg.png") bottom right no-repeat;
+  background-size: 945px 650px;
+}
+
+.main .container .main-title {
+  color: #222;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 130%;
+  max-width: 543px;
+  margin-bottom: 40px;
+}
+
+.main .container .main-image {
+  display: none;
+}
+
+.main .container .main-benefits .main-benefits-list {
+  list-style: none;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 39px;
+}
+
+.main .container .main-benefits .main-benefits-list .main-benefits-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main .container .main-benefits .main-benefits-list .main-benefits-item svg {
+  margin-right: 13px;
+}
+
+.main .container .main-actions {
+  margin-bottom: 30px;
+}
+
+.main .container .main-actions .btn:first-child {
+  width: 227px;
+  margin-right: 15px;
+}
+
+.main .container .main-actions .btn:first-child:hover {
+  background: linear-gradient(90deg,#b10088 -6.228%,#d16117 58.655%,#d77919 81.749%,#e2a120 103.743%);
+}
+
+.main .container .main-actions .btn:last-child {
+  width: 214px;
+}
+
+.main .container .main-actions .btn:last-child:hover {
+  border: 1px solid transparent;
+  background: linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#b10088,#d16117,#d77919,#e2a120) border-box;
+}
+
+.main .container .main-actions .btn:last-child:hover span {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90deg,#b10088,#d16117,#d77919,#e2a120);
+}
+
+.main .container .main-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.main .container .main-slider .slider-navigation {
+  display: flex;
+}
+
+.main .container .main-slider .slider-navigation span {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .container .main-slider .slider-navigation span:not(:last-child) {
+  margin-right: 37px;
+}
+
+.pilates {
+  padding: 80px 0;
+}
+
+.pilates .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pilates .container .pilates-info {
+  max-width: 486px;
+}
+
+.pilates .container .pilates-info .pilates-title {
+  color: #222;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 60px;
+}
+
+.pilates .container .pilates-info .pilates-benefits .pilates-benefits-list {
+  list-style: none;
+}
+
+.pilates .container .pilates-info .pilates-benefits .pilates-benefits-list .pilates-benefits-item {
+  display: flex;
+  align-items: center;
+}
+
+.pilates .container .pilates-info .pilates-benefits .pilates-benefits-list .pilates-benefits-item svg {
+  margin-right: 20px;
+}
+
+.pilates .container .pilates-info .pilates-benefits .pilates-benefits-list .pilates-benefits-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.pilates .container .pilates-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 606px;
+}
+
+.pilates .container .pilates-gallery .pilates-gallery-item {
+  width: 288px;
+  height: 184px;
+}
+
+.pilates .container .pilates-gallery .pilates-gallery-item img {
+  width: 100%;
+}
+
+@media screen and (max-width:360px) {
+  .header .container .header-content .header-bottom-menu,
+  .header .container .header-content .header-top .header-top-company {
+    display: none;
+  }
+
+  .header {
+    padding: 13px 0;
+  }
+
+  .header .container {
+    padding: 0 16px;
+  }
+
+  .header .container .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .header .container .header-content {
+    flex-direction: row;
+  }
+
+  .header .container .header-content .header-top {
+    border: none;
+    padding: 0;
+  }
+
+  .header .container .header-content .header-top .header-top-contacts {
+    margin: 0 23px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header .container .header-content .header-top .header-top-contacts .header-top-phone {
+    border-right: none;
+    padding: 0;
+  }
+
+  .header .container .header-content .header-top .header-top-contacts .header-top-whatsapp {
+    padding: 0;
+  }
+
+  .header .container .header-content .burger {
+    display: block;
+  }
+
+  .header .container .header-action {
+    display: none;
+  }
+
+  .main {
+    padding: 20px 0 28px;
+    background: 0 0;
+    border-bottom: 1px solid #DCDCDC;
+    border-top: 1px solid #DCDCDC;
+  }
+
+  .main .container {
+    padding: 0 20px 0 18px;
+  }
+
+  .main .container .main-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .main .container .main-image {
+    display: block;
+    width: 322px;
+    height: 188px;
+    background: url("/static/images/main-image.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  .main .container .main-benefits .main-benefits-list {
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .main .container .main-benefits .main-benefits-list .main-benefits-item {
+    margin-bottom: 10px;
+  }
+
+  .main .container .main-actions {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main .container .main-actions .btn {
+    font-size: 12px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .main .container .main-actions .btn:first-child,
+  .main .container .main-actions .btn:last-child {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .pilates {
+    padding: 30px 0;
+  }
+
+  .pilates .container {
+    padding: 0 16px;
+    flex-direction: column;
+  }
+
+  .pilates .container .pilates-info {
+    max-width: 486px;
+  }
+
+  .pilates .container .pilates-info .pilates-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .pilates .container .pilates-info .pilates-benefits {
+    margin-bottom: 28px;
+  }
+
+  .pilates .container .pilates-info .pilates-benefits .pilates-benefits-list .pilates-benefits-item {
+    font-size: 14px;
+  }
+
+  .pilates .container .pilates-info .pilates-benefits .pilates-benefits-list .pilates-benefits-item svg {
+    width: 36px;
+    height: 28px;
+  }
+
+  .pilates .container .pilates-info .pilates-benefits .pilates-benefits-list .pilates-benefits-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .pilates .container .pilates-gallery {
+    max-width: 328px;
+    gap: 9px;
+  }
+
+  .pilates .container .pilates-gallery .pilates-gallery-item {
+    width: 159px;
+    height: 101px;
+  }
+}

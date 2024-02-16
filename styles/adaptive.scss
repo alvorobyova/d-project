@@ -1,0 +1,167 @@
+@import "variables";
+@media screen and (max-width: 360px) {
+
+  .header {
+
+    padding: 13px 0;
+
+    .container {
+
+      padding: 0 16px;
+
+      .logo {
+        width: 48px;
+        height: 48px;
+      }
+
+      .header-content {
+        flex-direction: row;
+
+        .header-top {
+          border: none;
+          padding: 0;
+
+          .header-top-company {
+            display: none;
+          }
+
+          .header-top-contacts {
+            margin: 0 23px;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .header-top-phone {
+              border-right: none;
+              padding: 0;
+            }
+
+            .header-top-whatsapp {
+              padding: 0;
+            }
+          }
+        }
+
+        .header-bottom-menu {
+          display: none;
+        }
+
+        .burger {
+          display: block;
+        }
+      }
+
+      .header-action {
+        display: none;
+      }
+    }
+  }
+
+  .main {
+    padding: 20px 0 28px;
+    background: none;
+    border-bottom: 1px solid $main-border-color;
+    border-top: 1px solid $main-border-color;
+
+    .container {
+      padding: 0 20px 0 18px;
+
+      .main-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .main-image {
+        display: block;
+        width: 322px;
+        height: 188px;
+        background: url("/static/images/main-image.png") center center no-repeat;
+        background-size: cover;
+      }
+
+      .main-benefits {
+        .main-benefits-list {
+          margin: 20px 0;
+
+          font-size: 14px;
+
+          .main-benefits-item {
+            margin-bottom: 10px;
+
+          }
+        }
+      }
+
+      .main-actions {
+        width: 100%;
+        margin-bottom: 20px;
+
+        .btn {
+          font-size: 12px;
+          height: 50px;
+          margin-bottom: 10px;
+
+
+          &:first-child, &:last-child {
+            width: 100%;
+            margin-right: 0;
+
+
+          }
+
+          //width: 100%;
+        }
+      }
+    }
+  }
+
+  .pilates {
+    padding: 30px 0;
+
+    .container {
+      padding: 0 16px;
+      flex-direction: column;
+
+      .pilates-info {
+        max-width: 486px;
+
+        .pilates-title {
+          font-size: 24px;
+          margin-bottom: 30px;
+        }
+
+        .pilates-benefits {
+          margin-bottom: 28px;
+
+          .pilates-benefits-list {
+
+            .pilates-benefits-item {
+              font-size: 14px;
+
+              svg {
+                width: 36px;
+                height: 28px;
+              }
+
+              &:not(:last-child) {
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+
+
+      }
+
+      .pilates-gallery {
+        max-width: 328px;
+        gap: 9px;
+
+        .pilates-gallery-item {
+          width: 159px;
+          height: 101px;
+        }
+      }
+    }
+  }
+
+}
