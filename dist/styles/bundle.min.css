@@ -447,7 +447,7 @@ ul li {
     display: block;
     width: 322px;
     height: 188px;
-    background: url("/static/images/main-image.png") center center no-repeat;
+    background: url("../../static/images/main-image.png") center center no-repeat;
     background-size: cover;
   }
 
